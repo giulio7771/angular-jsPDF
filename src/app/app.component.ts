@@ -17,6 +17,25 @@ export class AppComponent {
   pdf = new jsPDF();
   
   imprimirCracha() {
+    var img = new Image()
+    img.src = "../assets/card-paint2.png";
+    this.pdf.addImage(img, 'png', 20, 20, 200, 130);
+    this.pdf.text("gatuno", 35, 70);
+    this.pdf.save();
+
+  }
+
+
+  imprimirCracha3() {
+    const pdf = new jsPDF();
+    var img = new Image()
+    img.src = "../assets/card-paint.png";
+    pdf.addImage(img, 'png', 10, 78, 12, 15)
+    pdf.save();
+
+  }
+
+  imprimirCracha2() {
     console.log("gatuno imprime cracha");
     
     const element: HTMLElement | null = document.getElementById("cracha");
