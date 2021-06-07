@@ -1,0 +1,171 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap");
+
+.cracha {
+  width: 5.5cm;
+  height: 8.5cm;
+  border: 1px solid black;
+  border-radius: 12px;
+  //margin-left: 2em;
+}
+
+.crachaVerso {
+  background: url("../assets/AlpargatasBackgroundVerso.png") no-repeat right top;
+}
+
+.crachaFrente {
+  background-image: url("../assets/CrachaSGTFrente.png");
+}
+
+.container {
+  padding-top: 2em;
+  display: flex;
+}
+
+.w-100 {
+  width: 100% !important;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.jc-between {
+  justify-content: space-between;
+}
+
+.jc-end {
+  justify-content: flex-end;
+}
+
+.jc-center {
+  justify-content: center;
+}
+
+.ai-center {
+  align-items: center;
+}
+
+.w-50 {
+  width: 50%;
+}
+
+.jc-around {
+  justify-content: space-around;
+}
+
+.paddingForTitle {
+  padding-top: 35px;
+}
+
+.verseTitleStyle {
+  text-decoration: underline;
+  text-underline-position: under;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  font-size: 12px;
+  position: relative;
+  left: 43px;
+}
+
+.frontTitleStyle {
+  font-family: "Poppins", sans-serif;
+  text-decoration: none;
+  font-weight: bolder;
+  position: relative;
+  font-size: 12px;
+  left: 20px;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.logoSize {
+  height: 25px;
+  width: 50px;
+}
+
+.qrCodeSize {
+  height: 0.8cm;
+  width: 0.8cm;
+}
+
+.imgSize {
+  height: 100px;
+  width: 100px;
+}
+
+.jc-start {
+  justify-content: start;
+}
+
+.d-none {
+  display: none;
+}
+
+.vHidden {
+  visibility: hidden;
+}
+
+.paddingTop {
+  padding-top: 1em;
+}
+
+.userTitleDefault {
+  text-transform: uppercase;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.userTitleFirstName {
+  @extend .userTitleDefault;
+  font-weight: bolder;
+}
+
+label {
+  font-size: 8px;
+  margin-left: 12px;
+  font-family: "Poppins";
+  font-weight: 500;
+  margin: 0;
+}
+
+.labelFontWeight {
+  font-weight: bold;
+}
+body {
+  background-color: red !important;
+  width: 21cm;
+  height: 29.7cm;
+  margin: 30mm 45mm 30mm 45mm;
+  /* change the margins as you want them to be. */
+}
+
+@media print {
+  .cracha {
+    -webkit-print-color-adjust: exact !important;
+    color-adjust: exact !important;
+  }
+}
+
+// @page {
+//   size: A4;
+//   margin: 0;
+// }
+
+.listStyle {
+  border-radius: 12px;
+  border: 1px solid black;
+  height: 16px;
+  margin: 3px;
+}
+.listStyle {
+  label {
+    padding: 2px;
+    padding-left: 5px;
+    padding-right: 7px;
+    font-size: 7px;
+  }
+}
