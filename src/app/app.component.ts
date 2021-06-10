@@ -49,12 +49,12 @@ export class AppComponent {
   }
 
   imprimirCracha5() {
-    console.log("gatuno imprime cracha");
-    
-    const element: HTMLElement | null = document.getElementById("cracha");
-    html2canvas(element as HTMLElement).then(canvas => {
-      const html = canvas.toDataURL("image/png");
-      
+    console.log('gatuno imprime cracha');
+
+    const element: HTMLElement | null = document.getElementById('cracha');
+    html2canvas(element as HTMLElement).then((canvas) => {
+      const html = canvas.toDataURL('image/png');
+
       const imgWidth = 208;
       const pageHeight = window.innerHeight;
       const imgHeight = window.innerWidth;
@@ -71,5 +71,9 @@ export class AppComponent {
     doc.text("Hello world!", 20, 10);
     doc.save("a4.pdf");
     */
+  }
+
+  handleUserPrint(): void {
+    print();
   }
 }
