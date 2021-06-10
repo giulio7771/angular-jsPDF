@@ -17,6 +17,17 @@ export class AppComponent {
   pdf = new jsPDF();
   
   imprimirCracha() {
+    const scale = 2;
+    console.log("imprimindo");
+    var img = new Image()
+    img.src = "../assets/Cracha-SGT.png";
+    this.pdf.addImage(img, 'png', 0, 0, (54*scale), (85.6*scale));
+    //this.pdf.addImage(img, 'png', 0, 0, 500, 100);
+    this.pdf.text("gatuno", 35, 70);
+    this.pdf.save();
+  }
+
+  imprimirCracha4() {
     var img = new Image()
     img.src = "../assets/card-paint2.png";
     this.pdf.addImage(img, 'png', 20, 20, 200, 130);
@@ -32,10 +43,9 @@ export class AppComponent {
     img.src = "../assets/card-paint.png";
     pdf.addImage(img, 'png', 10, 78, 12, 15)
     pdf.save();
-
   }
 
-  imprimirCracha2() {
+  imprimirCracha5() {
     console.log("gatuno imprime cracha");
     
     const element: HTMLElement | null = document.getElementById("cracha");
@@ -48,7 +58,7 @@ export class AppComponent {
       const position = 0;
       //this.pdf.addImage(html, 'PNG', 0, position, imgWidth, imgHeight);
       const pdf2 = new jsPDF();
-      pdf2.addImage(html, 'PNG', 0, position, 100, 100);
+      pdf2.addImage(html, 'PNG', 0, position, 600, 70);
 
       pdf2.save("a.pdf");
     });
