@@ -16,22 +16,28 @@ export class AppComponent {
   }
   pdf = new jsPDF();
   
+
   imprimirCracha() {
-    const scale = 2;
+    console.log("imprimir cracha");
+    const scale = 2.2;
     console.log("imprimindo");
     var img = new Image()
-    img.src = "../assets/Cracha-SGT.png";
-    this.pdf.addImage(img, 'png', 0, 0, (54*scale), (85.6*scale));
-    //this.pdf.addImage(img, 'png', 0, 0, 500, 100);
-    this.pdf.text("gatuno", 35, 70);
-    this.pdf.save();
+    img.src = "../assets/cracha.png";
+    const pdf = new jsPDF();
+    pdf.addImage(img, 'png', 0, 0, (54 * scale), (85.6 * scale));
+    pdf.setFontSize(10);
+    pdf.text("Gatuno da Silva", 18, 103);
+    pdf.text("Nr-18", 68, 75);
+    pdf.setFontSize(9);
+    pdf.text("12/02/2022", 82, 75);
+    pdf.save("cracha.pdf");
   }
 
-  imprimirCracha4() {
+  imprimirCracha7() {
     var img = new Image()
     img.src = "../assets/card-paint2.png";
     this.pdf.addImage(img, 'png', 20, 20, 200, 130);
-    this.pdf.text("gatuno", 35, 70);
+    this.pdf.text("gatuno", 22, 120);
     this.pdf.save();
 
   }
