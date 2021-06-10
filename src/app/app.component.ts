@@ -74,4 +74,8 @@ export class AppComponent {
     doc.save("a4.pdf");
     */
   }
+
+  handlePrint(): void {
+    print();
+  }
 }

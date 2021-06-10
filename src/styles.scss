@@ -4,8 +4,7 @@
 @import "~bootstrap/scss/bootstrap";
 
 @media print {
-  @page {
-    //size: A4 !important;
-    //margin: 0 !important;
+  body {
+    min-width: auto !important;
   }
 }
