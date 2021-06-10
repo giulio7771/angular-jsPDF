@@ -16,43 +16,6 @@
   background-image: url("../assets/CrachaSGTFrente.png");
 }
 
-.container {
-  padding-top: 2em;
-  display: flex;
-}
-
-.w-100 {
-  width: 100% !important;
-}
-
-.d-flex {
-  display: flex;
-}
-
-.jc-between {
-  justify-content: space-between;
-}
-
-.jc-end {
-  justify-content: flex-end;
-}
-
-.jc-center {
-  justify-content: center;
-}
-
-.ai-center {
-  align-items: center;
-}
-
-.w-50 {
-  width: 50%;
-}
-
-.jc-around {
-  justify-content: space-around;
-}
-
 .paddingForTitle {
   padding-top: 35px;
 }
@@ -76,10 +39,6 @@
   left: 20px;
 }
 
-.flex-column {
-  flex-direction: column;
-}
-
 .logoSize {
   height: 25px;
   width: 50px;
@@ -93,22 +52,6 @@
 .imgSize {
   height: 100px;
   width: 100px;
-}
-
-.jc-start {
-  justify-content: start;
-}
-
-.d-none {
-  display: none;
-}
-
-.vHidden {
-  visibility: hidden;
-}
-
-.paddingTop {
-  padding-top: 1em;
 }
 
 .userTitleDefault {
